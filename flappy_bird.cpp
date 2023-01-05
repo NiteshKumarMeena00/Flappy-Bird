@@ -14,7 +14,7 @@
 #define PIPE_DIF 45
 
 using namespace std;
-//		cout<<"���������";
+//		cout<<"±±±±±±±±±±±±";
  
 HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 COORD CursorPosition;
@@ -48,16 +48,16 @@ void setcursor(bool visible, DWORD size)
 void drawBorder(){ 
 	
 	for(int i=0; i<SCREEN_WIDTH; i++){
-		gotoxy(i,0); cout<<"�";
-		gotoxy(i,SCREEN_HEIGHT); cout<<"�";
+		gotoxy(i,0); cout<<"±";
+		gotoxy(i,SCREEN_HEIGHT); cout<<"±";
 	}
 	
 	for(int i=0; i<SCREEN_HEIGHT; i++){
-		gotoxy(0,i); cout<<"�";
-		gotoxy(SCREEN_WIDTH,i); cout<<"�";
+		gotoxy(0,i); cout<<"±";
+		gotoxy(SCREEN_WIDTH,i); cout<<"±";
 	}
 	for(int i=0; i<SCREEN_HEIGHT; i++){
-		gotoxy(WIN_WIDTH,i); cout<<"�";
+		gotoxy(WIN_WIDTH,i); cout<<"±";
 	}
 }
 void genPipe(int ind){
